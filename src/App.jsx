@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, Auth, Orders } from "./pages";
 import Header from "./components/shared/Header";
 
 function App() {
   return (
-    <Router basename="/pos-template-react-js">   {/* 👈 set basename */}
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
