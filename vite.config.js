@@ -6,8 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()
   ],
-  base: '/pos-template-react-js/', // your repo name
-  build: {
-    outDir: 'docs'       // output directly to docs/
-  }
+  base: "/pos-template-react-js/",
 })
